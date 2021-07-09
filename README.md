@@ -7,7 +7,7 @@ Taller para el colectivo [R Ladies Guadalajara](https://www.meetup.com/es-ES/rla
 - `SARSCoV2 y Minería de Datos.R`: Código fuente en lenguaje R que contiene las respuestas a la libreta de Jupyter.
 
 
-Los primeros dos archivos fueron descargados del [National Center for Biotechnology Information (NCBI)](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Protein&VirusLineage_ss=Wuhan%20seafood%20market%20pneumonia%20virus,%20taxid:2697049&SLen_i=1273%20TO%201273&Completeness_s=complete&HostLineage_ss=Homo%20sapiens%20(human),%20taxid:9606) el día 7 de julio del 2021 y contienen los datos de secuenciación de Estados Unidos de América.
+Los primeros dos archivos fueron descargados del [National Center for Biotechnology Information (NCBI)](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Protein&VirusLineage_ss=Wuhan%20seafood%20market%20pneumonia%20virus,%20taxid:2697049&SLen_i=1273%20TO%201273&Completeness_s=complete&HostLineage_ss=Homo%20sapiens%20(human),%20taxid:9606) el día 7 de julio del 2021 y contienen datos de secuenciación de Estados Unidos de América.
 
 
 #### Paqueterías necesarias
