@@ -17,3 +17,5 @@ Para poder ejecutar correctamente el código, será necesaria la paquetería `se
 install.packages("seqinr")
 library(seqinr)
 ```
+
+Base de datos adicional no utilizada en el taller: [GISAID Initiative](https://www.gisaid.org/)
