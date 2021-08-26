@@ -134,14 +134,22 @@ logMutacionesPorPosicionEstado2 <- log(mutacionesPorPosicionEstado2)
 
 
 par(mfrow=c(1,2))
+plot(mutacionesPorPosicionEstado1,main=estado1)
+plot(mutacionesPorPosicionEstado2,main=estado2)
+
+par(mfrow=c(1,2))
 plot(logMutacionesPorPosicionEstado1,main=estado1)
 plot(logMutacionesPorPosicionEstado2,main=estado2)
 
 par(mfrow=c(1,1))
-plot(logMutacionesPorPosicionEstado1, col="red",main=estado1,
-     ylim=c(0,log(max(length(filtro1),length(filtro2)))))
-lines(logMutacionesPorPosicionEstado2, col="blue",type="p",main=estado2,
-      ylim=c(0,log(max(length(filtro1),length(filtro2)))))
+plot(mutacionesPorPosicionEstado1, col="red",
+     ylim=c(0,max(mutacionesPorPosicionEstado1,mutacionesPorPosicionEstado2)))
+lines(mutacionesPorPosicionEstado2, col="blue",type="p")
+
+par(mfrow=c(1,1))
+plot(logMutacionesPorPosicionEstado1, col="red",
+     ylim=c(0,max(logMutacionesPorPosicionEstado1,logMutacionesPorPosicionEstado2)))
+lines(logMutacionesPorPosicionEstado2, col="blue",type="p")
 
 length(filtro1)
 length(filtro2)
