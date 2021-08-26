@@ -1,6 +1,6 @@
 # SARS-CoV-2 y Minería de Datos
 
-Taller para el colectivo [R Ladies Guadalajara](https://www.meetup.com/es-ES/rladies-guadalajara/events/279129632/) donde se explica un poco sobre cómo realizo Minería de Datos en nuestra investigación sobre la proteína Spike del virus SARS-CoV-2. En el repositorio se podrán encontrar los siguientes archivos:
+Taller donde se explica un poco sobre cómo realizamos Minería de Datos en nuestra investigación sobre la proteína Spike del virus SARS-CoV-2. En el repositorio se podrán encontrar los siguientes archivos:
 - `Secuencias.zip`: Archivo comprimido con las secuencias en formato fasta
 - `Secuencias.csv`: Archivo con los metadatos de las secuencias
 - `SARS-CoV-2 y Minería de Datos.ipynb`: Libreta de Jupyter que nos ayudará a ir paso por paso por el taller.
@@ -19,3 +19,8 @@ library(seqinr)
 ```
 
 Base de datos adicional no utilizada en el taller: [GISAID Initiative](https://www.gisaid.org/)
+
+
+#### Eventos donde ha sido impartido este taller
+- [UANL](www.uanl.mx/eventos/catedra-cedillo/) el día jueves 26 de agosto del 2021 por Cynthia Castillo (@LaMatemaga), Carolina Sanmiguel y Joaquín Desiderio (@DechiWords)
+- [R Ladies Guadalajara](https://www.meetup.com/es-ES/rladies-guadalajara/events/279129632/) el día viernes 9 de julio del 2021 por Cynthia Castillo (@LaMatemaga)
