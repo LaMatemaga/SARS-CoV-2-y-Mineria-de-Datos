@@ -109,54 +109,26 @@ plot(logMutacionesPorPosicion,main="USA")
 # Estado 1
 estado1 <- 'MI'
 filtro1 <- which(metaSecuencias$USA[1:cantidadSecuencias]==estado1)
-matrizAuxEstado1 <- matrix(0,nrow=tamanioSecuencia,ncol=numeroAminoacidos)
-colnames(matrizAuxEstado1)<- listaDeAminoacidos
+mutacionesPorPosicionEstado1 <- rep(0,tamanioSecuencia)
 for(i in filtro1){
   for(j in 1:tamanioSecuencia){
-    for(k in 1:numeroAminoacidos){
-      if(substring(secuencias[[i]],j,j)==listaDeAminoacidos[k]){
-        matrizAuxEstado1[j,k] <- matrizAuxEstado1[j,k]+1
-        break
-      }
+    if(secuencias[[i]][j]!=cadenaConsenso[j]){
+      mutacionesPorPosicionEstado1[j] <- mutacionesPorPosicionEstado1[j]+1
     }
   }
-}
-for(i in 1:tamanioSecuencia){       # Para poner las X en el consenso manualmente
-  aux <- cantidadSecuencias-sum(matrizAuxEstado1[i,])
-  index <- which(matrizAuxEstado1[i,]==max(matrizAuxEstado1[i,]))
-  matrizAuxEstado1[i,index] <- aux + matrizAuxEstado1[i,index]
-}
-rm(aux, index)
-mutacionesPorPosicionEstado1 <- c()
-for (i in 1:tamanioSecuencia) {
-  mutacionesPorPosicionEstado1 <- c(mutacionesPorPosicionEstado1, sum(matrizAuxEstado1[i,])-max(matrizAuxEstado1[i,]))
 }
 logMutacionesPorPosicionEstado1 <- log(mutacionesPorPosicionEstado1)
 
 # Estado 2
-estado2 <- 'WA'
+estado2 <- 'CA'
 filtro2 <- which(metaSecuencias$USA[1:cantidadSecuencias]==estado2)
-matrizAuxEstado2 <- matrix(0,nrow=tamanioSecuencia,ncol=numeroAminoacidos)
-colnames(matrizAuxEstado2)<- listaDeAminoacidos
+mutacionesPorPosicionEstado2 <- rep(0,tamanioSecuencia)
 for(i in filtro2){
   for(j in 1:tamanioSecuencia){
-    for(k in 1:numeroAminoacidos){
-      if(substring(secuencias[[i]],j,j)==listaDeAminoacidos[k]){
-        matrizAuxEstado2[j,k] <- matrizAuxEstado2[j,k]+1
-        break
-      }
+    if(secuencias[[i]][j]!=cadenaConsenso[j]){
+      mutacionesPorPosicionEstado2[j] <- mutacionesPorPosicionEstado2[j]+1
     }
   }
-}
-for(i in 1:tamanioSecuencia){       # Para poner las X en el consenso manualmente
-  aux <- cantidadSecuencias-sum(matrizAuxEstado2[i,])
-  index <- which(matrizAuxEstado2[i,]==max(matrizAuxEstado2[i,]))
-  matrizAuxEstado2[i,index] <- aux + matrizAuxEstado2[i,index]
-}
-rm(aux, index)
-mutacionesPorPosicionEstado2 <- c()
-for (i in 1:tamanioSecuencia) {
-  mutacionesPorPosicionEstado2 <- c(mutacionesPorPosicionEstado2, sum(matrizAuxEstado2[i,])-max(matrizAuxEstado2[i,]))
 }
 logMutacionesPorPosicionEstado2 <- log(mutacionesPorPosicionEstado2)
 
