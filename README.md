@@ -22,5 +22,5 @@ Base de datos adicional no utilizada en el taller: [GISAID Initiative](https://w
 
 
 #### Eventos donde ha sido impartido este taller
-- [UANL](www.uanl.mx/eventos/catedra-cedillo/) el día jueves 26 de agosto del 2021 por Cynthia Castillo (@LaMatemaga), Carolina Sanmiguel y Joaquín Desiderio (@DechiWords)
+- [UANL](https://www.uanl.mx/eventos/catedra-cedillo/) el día jueves 26 de agosto del 2021 por Cynthia Castillo (@LaMatemaga), Carolina Sanmiguel y Joaquín Desiderio (@DechiWords)
 - [R Ladies Guadalajara](https://www.meetup.com/es-ES/rladies-guadalajara/events/279129632/) el día viernes 9 de julio del 2021 por Cynthia Castillo (@LaMatemaga)
